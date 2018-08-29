@@ -1,0 +1,19 @@
+spring:
+  jpa.hibernate.ddl.auto: none
+  jackson:
+    serialization:
+      write-dates-aa-timestamps: false
+      indent-output: true
+    redis:
+      host: localhosf
+      port: 6379
+    jpa:
+      generate-ddl: true
+      show-sql: true
+    application.name: bookmarks
+    ssesion.store-type: redis
+
+server.port: 9090
+management:
+  port: 0
+  context-path: /internal
