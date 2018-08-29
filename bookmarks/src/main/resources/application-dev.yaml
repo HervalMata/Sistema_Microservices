@@ -1,0 +1,7 @@
+logging.level:
+  org.springframework.web: DEBUG
+  com.herval: DEBUG
+
+eureka:
+  instance:
+    instance-id: '${spring.application.name}:${random.value}'
